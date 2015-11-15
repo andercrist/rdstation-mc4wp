@@ -18,7 +18,6 @@ class RdMC4WP {
      */    
     public static function init() {
         add_action('admin_menu', array('RdMC4WP','adminMenu'));
-        add_action( 'mc4wp_form_success', 'rdmc4wp_form_success', 10, 3 );
     }
 
     /**
@@ -73,5 +72,5 @@ class RdMC4WP {
     }
 
 }
-
-add_filter('init', array('RdMC4WP','init'));
+if (is_plugin_active('mailchimp-for-wp/mailchimp-for-wp.php')) 
+    add_filter('init', array('RdMC4WP','init'));
