@@ -72,5 +72,5 @@ class RdMC4WP {
     }
 
 }
-if (is_plugin_active('mailchimp-for-wp/mailchimp-for-wp.php')) 
+if (is_plugin_active('mailchimp-for-wp/mailchimp-for-wp.php') || is_plugin_active('mailchimp-for-wp-pro/mailchimp-for-wp-pro.php')) 
     add_filter('init', array('RdMC4WP','init'));
