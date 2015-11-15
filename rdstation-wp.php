@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: 	Integração RD Station
-Plugin URI: 	https://wordpress.org/plugins/integracao-rdstation
+Plugin URI: 	https://github.com/haarieh/rdstation-mc4wp
 Description: 	Integre seus formulários de contato do WordPress com o RD Station
 Version: 		1.2
 Author: 		Resultados Digitais
