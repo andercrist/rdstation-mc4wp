@@ -20,8 +20,11 @@ function mc4wp_add_lead_conversion( $form_data ) {
 }
 
 function action_mc4wp_after_subscribe( $data_email, $data, $number, $result ) {
-	$lang = '';
-	if(defined(ICL_LANGUAGE_CODE)) $lang = '-' . ICL_LANGUAGE_CODE;
+	if (defined("ICL_LANGUAGE_CODE")) {
+		$lang = "-" . ICL_LANGUAGE_CODE;
+	} else {
+		$lang = "";
+	}	
 	if($result) {
 		$form_data['token_rdstation'] =  get_option("rdmc4wp-token");
 		$form_data['identificador'] = get_option("rdmc4wp-identificador") . $lang;
